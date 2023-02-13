@@ -5,6 +5,6 @@ export default function Home() {
     <div>
       <h1>Hello Front End</h1>
     </div>
-  );
+  ); 
 }
  
