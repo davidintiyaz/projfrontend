@@ -1,5 +1,7 @@
 import { API } from "../../backend";
 
+//API Means : http://localhost:8000/api/
+
 export const signup = user => {
   return fetch(`${API}/signup`, {
     method: "POST",
@@ -31,7 +33,7 @@ export const signin = user => {
 };
 
 export const authenticate = (data, next) => {
-  if (typeof window !== "undefined") {
+    if (typeof window !== "undefined") {
     localStorage.setItem("jwt", JSON.stringify(data));
     next();
   }
